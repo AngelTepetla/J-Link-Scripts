@@ -1,0 +1,6 @@
+exec SetRXIDCode = 45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
+r
+h
+erase
+r
+exit
