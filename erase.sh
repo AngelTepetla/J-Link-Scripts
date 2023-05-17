@@ -16,12 +16,16 @@ elif [[ $1 == 'mainboard' ]]; then
    TARGET=rockhopper
    DEVICE=R5F51308
    CODE=45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
+elif [[ $1 == 'other' ]]; then
+   TARGET=$2
+   DEVICE=$3
+   CODE=$4
 else
    echo
    echo
    echo -e "\033[1m> Unsupported target!!!\033[0m"
    echo
-   echo -e "\033[1m> Choose only between: dispenser, hmi, mainboard \033[0m"
+   echo -e "\033[1m> Choose only between: dispenser, hmi, mainboard, other \033[0m"
    echo
    exit 1
 fi
