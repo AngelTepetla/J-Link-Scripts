@@ -1,6 +1,6 @@
 exec SetRXIDCode = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 r
 h
-loadfile Binaries/Temp/temp.mot
+erase
 r
 exit

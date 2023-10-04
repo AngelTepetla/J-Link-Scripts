@@ -4,22 +4,22 @@ set -e
 clear
 mkdir -p ~/Helpers
 
-if [[ $1 == 'hmi' ]]; then
-   TARGET=Lighthouse-HMI
+if [[ $1 == 'some' ]]; then
+   TARGET=Some-Target
    DEVICE=R5F51306
-   CODE=45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
-elif [[ $1 == 'dispenser' ]]; then
-   TARGET=Lighthouse-Dispenser
+   CODE=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+elif [[ $1 == 'other-random' ]]; then
+   TARGET=Other-Random-Target
    DEVICE=R5F51306
-   CODE=45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
-elif [[ $1 == 'mainboard' ]]; then
-   TARGET=rockhopper
+   CODE=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+elif [[ $1 == 'random' ]]; then
+   TARGET=Random-Target
    DEVICE=R5F51308
-   CODE=45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
-elif [[ $1 == 'titanic' ]]; then
-   TARGET=titanic
+   CODE=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+elif [[ $1 == 'some-other' ]]; then
+   TARGET=Some-Other-Target
    DEVICE=R5F52317
-   CODE=45C0C0AC1C1AC2C2AC3C3AC4C4AC5C5A
+   CODE=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 elif [[ $1 == 'other' ]]; then
    TARGET=$2
    DEVICE=$3
@@ -29,7 +29,7 @@ else
    echo
    echo -e "\033[1m> Unsupported target!!!\033[0m"
    echo
-   echo -e "\033[1m> Choose only between: dispenser, hmi, mainboard, titanic, other \033[0m"
+   echo -e "\033[1m> Choose only between: some, other-random, random, some-other, other \033[0m"
    echo
    exit 1
 fi
